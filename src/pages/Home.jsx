@@ -4,17 +4,17 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id="home" className="home">
       <section className="hero">
         <h1>Empowering Future Leaders, Support Education for Underprivileged Children.</h1>
         <p>270 children under our care, 50+ donations collected</p>
       </section>
-      <section className="mission">
+      <section id ="about-us" className="mission">
         <h2>Help Us Build Brighter Tomorrows</h2>
         <p>"At our core, we believe that every child, regardless of their background, deserves the opportunity to receive quality education and the chance to shape their own future. By supporting the education of underprivileged children, you are not only helping them break the cycle of poverty but also empowering them to become the leaders of tomorrow. Your donations directly contribute to building a brighter future—where every child has the tools and resources to thrive, dream big, and make a positive impact on their community and beyond."</p>
         <button>Learn more</button>
       </section>
-      <section className="services">
+      <section id="services" className="services">
       <div className="services-content">
       <div className="services-text">
         <h2>What Services We Provide?</h2>
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="projects">
+      <section id="project" className="projects">
   <h2>Projects We Have Done</h2>
   <p1><b>We are creating a place where children with special needs can thrive</b></p1>
   <div className="project-grid">
@@ -69,10 +69,25 @@ const Home = () => {
   </div>
 </section>
 
-      <section className="donation">
-        <h2>How We Spend Your Donations</h2>
-        <p>Your donations help provide education, healthcare, and meals for children in need.</p>
-      </section>
+<section id="donations-breakdown" className="donation-breakdown">
+  <div className="donation-breakdown-content">
+    <div className="donation-breakdown-text">
+      <h2>How we spend your donations and where it goes</h2>
+      <p>We understand that when you make a donation, you want to know exactly where your money is going, and we pledge to be transparent.</p>
+      <ul>
+        <li><span className="color-box" style={{ backgroundColor: '#6CE5E8' }}></span> 40% childcare home</li>
+        <li><span className="color-box" style={{ backgroundColor: '#41B8D5' }}></span> 35% cleanliness program</li>
+        <li><span className="color-box" style={{ backgroundColor: '#2D8BBA' }}></span> 10% excursions</li>
+        <li><span className="color-box" style={{ backgroundColor: '#2F5F98' }}></span> 10% helping people</li>
+        <li><span className="color-box" style={{ backgroundColor: '#31356E' }}></span> 5% feeding the poor</li>
+      </ul>
+    </div>
+    <div className="donation-breakdown-chart">
+      <img src="/src/assets/piechart.png" alt="Donation Pie Chart" />
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };

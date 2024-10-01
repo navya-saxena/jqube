@@ -1,10 +1,20 @@
 .header {
-  background-color: #000;
+  position:fixed; /* Makes the header stick to the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the header is always on top */
+  background: transparent; /* Set header background to transparent */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  transition: background-color 0.3s ease; /* Adds smooth transition for background */
+}
+
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Header background turns opaque when scrolled */
 }
 
 .header .logo {
@@ -13,14 +23,15 @@
   color: white;
 }
 
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
 .header nav ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
-}
-
-.header nav ul li {
-  position: relative;
 }
 
 .header nav ul li a {

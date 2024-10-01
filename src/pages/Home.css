@@ -3,7 +3,7 @@
     background: url('/src/assets/top.webp') center/cover no-repeat;
     height: 80vh;
     display: flex;
-    
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -29,6 +29,8 @@
     background-color: #f4f4f4;
     padding: 4rem 2rem;
     text-align: center;
+    min-height: 100vh; 
+    padding-top: 10%;
   }
   
   .mission h2 {
@@ -57,6 +59,7 @@
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .services-content {
@@ -180,21 +183,75 @@
 
   
   /* Donation Section */
-  .donation {
-    background-color: #f4f4f4;
+  /* Donation Breakdown Section */
+  .donation-breakdown {
+    background-color: #000;
+    color: white;
     padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-  }
+    border-bottom-left-radius: 0; /* Remove any potential oval effect */
+    border-bottom-right-radius: 0; /* Remove any potential oval effect */
+   
+}
+
+
+.donation-breakdown-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.donation-breakdown-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.donation-breakdown-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.donation-breakdown-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.donation-breakdown-text ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.donation-breakdown-text ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.color-box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.donation-breakdown-chart {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.donation-breakdown-chart img {
   
-  .donation h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .donation p {
-    font-size: 1.2rem;
-    color: #666;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
+    max-width: 100%;
+    border-radius: 0; /* Ensure the pie chart is not rounded */
+
+
+}
