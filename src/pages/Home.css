@@ -51,7 +51,7 @@
     
   }
   
-  /* Services Section */
+  
   /* Services Section */
 .services {
   background-color: #002e5d;
@@ -128,8 +128,8 @@
 }
 
 .project-item {
-  flex: 1 1 300px; /* Takes full width if space is available */
-  max-width: 300px; /* Limits the maximum width */
+  flex: 1 1 300px; 
+  max-width: 300px; 
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -192,8 +192,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom-left-radius: 0; /* Remove any potential oval effect */
-    border-bottom-right-radius: 0; /* Remove any potential oval effect */
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0; 
    
 }
 
@@ -251,7 +251,7 @@
 .donation-breakdown-chart img {
   
     max-width: 100%;
-    border-radius: 0; /* Ensure the pie chart is not rounded */
+    border-radius: 0; 
 
 
 }
