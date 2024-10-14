@@ -1,32 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import './Header.css';
+import logo from '/src/assets/j qube logo-2.png'; // Assuming you are using a file from your src/assets
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // Function to handle scroll
     const handleScroll = () => {
-      if (window.scrollY > 50) {  // Adjust the value based on when you want it to trigger
+      if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
 
-    // Add event listener for scrolling
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Function to handle smooth scrolling to sections
   const scrollToSection = (sectionId) => {
     const section = document.querySelector(sectionId);
-    const headerOffset = 80;  // Adjust this value depending on your header height
+    const headerOffset = 80;
     const sectionPosition = section.offsetTop - headerOffset;
 
     window.scrollTo({
@@ -36,26 +32,84 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="logo">
-        <img src="/src/assets/j qube logo-2.png" alt="J-QUBE Logo" />
+    <header
+      className={`fixed w-full top-0 left-0 z-50 flex justify-between items-center px-8 py-4 transition-colors duration-300 ${
+        isScrolled ? 'bg-white shadow-lg' : 'bg-white'
+      }`}
+    >
+      {/* Logo Section */}
+      <div className="flex items-center">
+        <img src={logo} alt="J-QUBE Logo" className="w-24 h-auto" />
       </div>
+
+      {/* Navigation Section */}
       <nav>
-        <ul>
+        <ul className="flex space-x-6">
           <li>
-            <a href="#home" onClick={() => scrollToSection('#home')}>Home</a>
+            <a
+              href="#home"
+              onClick={() => scrollToSection('#home')}
+              className="text-navy-900 text-lg px-4 py-2 hover:text-yellow-500 transition-all"
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about-us" onClick={() => scrollToSection('#about-us')}>About Us</a>
+            <a
+              href="#about-us"
+              onClick={() => scrollToSection('#about-us')}
+              className="text-navy-900 text-lg px-4 py-2 hover:text-yellow-500 transition-all"
+            >
+              About Us
+            </a>
           </li>
           <li>
-            <a href="#services" onClick={() => scrollToSection('#services')}>What We Do</a>
+            <a
+              href="#services"
+              onClick={() => scrollToSection('#services')}
+              className="text-navy-900 text-lg px-4 py-2 hover:text-yellow-500 transition-all"
+            >
+              What We Do
+            </a>
+          </li>
+
+          {/* Updated Journal Link */}
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-navy-900 text-lg px-4 py-2 hover:text-yellow-500 transition-all"
+            >
+              Journals
+            </a>
+          </li>
+
+          {/* Updated Conference Link */}
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-navy-900 text-lg px-4 py-2 hover:text-yellow-500 transition-all"
+            >
+              Conferences
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              onClick={() => scrollToSection('#contact')}
+              className="text-navy-900 text-lg px-4 py-2 hover:text-yellow-500 transition-all"
+            >
+              Contact
+            </a>
           </li>
           <li>
-            <a href="#contact" onClick={() => scrollToSection('#contact')}>Contact</a>
-          </li>
-          <li>
-            <button className="donate-btn">Donate Now</button>
+            <button className="bg-yellow-400 text-black font-bold px-6 py-3 rounded-full hover:bg-yellow-500 transition-colors">
+              Donate Now
+            </button>
           </li>
         </ul>
       </nav>
