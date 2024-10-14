@@ -1,0 +1,33 @@
+/* src/components/Journals.css */
+.journals-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width:100%;
+  }
+  
+  .journals-section h2 {
+    font-size: 2.5rem;
+    color: navy;
+    margin-bottom: 20px;
+  }
+  
+  .journals-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .journals-list li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .journals-list li::before {
+    content: '➤';
+    margin-right: 10px;
+    color: #1E2A78;
+  }
+  

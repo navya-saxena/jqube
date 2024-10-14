@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+}
+
+/* Logo container on the left */
+.navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-logo img {
+  width: 100px; /* Adjust the logo size if necessary */
+}
+
+/* Flex container for links and button on the right */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the navbar-right to the far right */
+}
+
+/* Navbar Links Styling */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;  /* Adds space between menu items */
+}
+
+.navbar-links li {
+  position: relative; /* Allows dropdown to position itself relative to the li */
+  font-size: 18px;
+}
+
+.navbar-links a {
+  color: navy;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.navbar-links a:hover {
+  color: #FFD700; /* Highlight color when hovering */
+}
+
+/* Dropdown container */
+.dropdown {
+  position:relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Aligns the dropdown directly below the "Journals" menu */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+  width: 180px;  /* Ensure the dropdown has enough width */
+  white-space: nowrap;  /* Prevents text from wrapping */
+  min-width: max-content; 
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: navy;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dropdown-menu li a:hover {
+  background-color:navy;
+  color: white;
+}
