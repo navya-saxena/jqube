@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 60px; /* Adjust the value based on your navbar height */
+}
+
 /* Hero Section */
 .hero {
     background: url('/src/assets/top.webp') center/cover no-repeat;
@@ -54,8 +58,8 @@
   
   /* Services Section */
 .services {
-  background-color: #002e5d;
-  color: white;
+  background-color: #f4f4f4;
+  color: black;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -105,7 +109,7 @@
   /* Projects Section */
 .projects {
   padding: 4rem 2rem;
-  background-color: white;
+  background-color: #f4f4f4;
   text-align: center;
 }
 
@@ -185,8 +189,8 @@
   /* Donation Section */
   /* Donation Breakdown Section */
   .donation-breakdown {
-    background-color: #000;
-    color: white;
+    background-color: #f4f4f4;
+    color: black;
     padding: 4rem 2rem;
     display: flex;
     justify-content: center;
