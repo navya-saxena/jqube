@@ -1,0 +1,43 @@
+/* src/components/Footer.css */
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+footer h2 {
+  font-size: 2rem;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #FFD700;
+}
+
+footer input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+footer button {
+  transition: background-color 0.3s;
+}
+
+footer .flex {
+  display: flex;
+}
+
+footer .flex img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
