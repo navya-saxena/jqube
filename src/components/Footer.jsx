@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h4>Enquiry Us</h4>
-          <p>Prof. (Dr.) John Doe</p>
+          <p>Prof. (Dr.) Jayant Jagtap</p>
           <p>Executive Editor, Member Planning J-Qube International</p>
           <p>Email: contact@jqube.org</p>
           <p>Phone: +91-1234567890</p>
