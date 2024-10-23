@@ -14,7 +14,7 @@ const EventsPage = () => {
           <p>A hands-on workshop introducing kids to science, technology, engineering, and mathematics.</p>
           <button>Register Now</button>
         </div>
-        
+
         {/* Event 2 */}
         <div className="event-card">
           <img src="https://via.placeholder.com/150" alt="AI in Education Seminar" />
@@ -78,6 +78,38 @@ const EventsPage = () => {
           <button>Register Now</button>
         </div>
       </div>
+
+      <section id="seminars" className="seminar-webinar-section">
+        <h2 className="section-title">Upcoming Seminars & Webinars</h2>
+        <div className="seminar-cards-container">
+          {/* Seminar Card 1 */}
+          <div className="seminar-card">
+            <img src="https://via.placeholder.com/150" alt="AI in Education Seminar" />
+            <h3>AI in Education Seminar</h3>
+            <p><strong>Date:</strong> 22nd October 2024</p>
+            <p>Explore the role of Artificial Intelligence in transforming education systems.</p>
+            <button>Register Now</button>
+          </div>
+
+          {/* Webinar Card 1 */}
+          <div className="seminar-card">
+            <img src="https://via.placeholder.com/150" alt="EdTech Webinar" />
+            <h3>EdTech Webinar 2024</h3>
+            <p><strong>Date:</strong> 10th November 2024</p>
+            <p>Join us to discuss the latest advancements in educational technology.</p>
+            <button>Register Now</button>
+          </div>
+
+          {/* Seminar Card 2 */}
+          <div className="seminar-card">
+            <img src="https://via.placeholder.com/150" alt="Teacher Training Webinar" />
+            <h3>Teachers' Training Webinar</h3>
+            <p><strong>Date:</strong> 15th November 2024</p>
+            <p>Empowering teachers with new skills and techniques for classroom innovation.</p>
+            <button>Register Now</button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

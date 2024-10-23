@@ -1,43 +1,85 @@
-/* src/components/Footer.css */
+/* Footer.css */
+
 footer {
   background-color: black;
   color: white;
-  padding: 2rem;
-}
-
-footer h2 {
-  font-size: 2rem;
-}
-
-footer h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: #FFD700;
-}
-
-footer input {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-}
-
-footer button {
-  transition: background-color 0.3s;
-}
-
-footer .flex {
+  padding: 1rem; /* Reduced padding for height */
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20%;
 }
 
-footer .flex img {
-  width: 1.2rem;
-  height: 1.2rem;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px; /* Max width for larger screens */
+}
+
+.footer-section {
+  margin-bottom: 0.5rem; /* Vertical spacing between sections */
+  text-align: center;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: space-between; /* Use space-between for better alignment */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin-bottom: 1rem; /* Bottom margin for spacing */
+  width: 100%; /* Full width */
+}
+
+.footer-links div {
+  margin: 0 1rem; /* Horizontal margin for spacing, reduced for compactness */
+}
+
+.footer-links h3 {
+  font-weight: bold;
+  font-size: 1rem; /* Adjusted font size */
+  margin-bottom: 0.5rem; /* Space below heading */
+}
+
+.footer-links a {
+  display: block;
+  font-size: 0.9rem; /* Slightly smaller font size for links */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-links a:hover {
+  color: #ffcc00; /* Hover color */
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-section p {
+  margin-bottom: 0.25rem; /* Reduced margin */
+  font-size: 0.9rem; /* Adjusted font size */
+}
+
+.subscribe-input {
+  padding: 0.5rem; /* Padding for input */
+  border-radius: 0.375rem; /* Rounded corners */
+  border: none;
+  margin-right: 0.5rem; /* Margin to separate input and button */
+}
+
+.subscribe-button {
+  background-color: #ffcc00; /* Button background color */
+  color: black;
+  padding: 0.5rem 1rem; /* Horizontal padding for button */
+  border-radius: 1rem; /* Rounded button */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.subscribe-button:hover {
+  background-color: #e6b800; /* Hover background color */
 }

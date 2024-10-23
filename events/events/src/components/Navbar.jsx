@@ -4,6 +4,13 @@ import './Navbar.css';
 const Navbar = () => {
   const [showJournalsDropdown, setShowJournalsDropdown] = useState(false);
   const [showEventsDropdown, setShowEventsDropdown] = useState(false);
+  
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav>
@@ -36,8 +43,28 @@ const Navbar = () => {
               <a href="#events">Events</a>
               {showEventsDropdown && (
                 <ul className="dropdown-menu">
-                  <li><a href="#workshops">Workshops</a></li>
-                  <li><a href="#seminars">Seminars/Webinars</a></li>
+                  <li>
+                    <a 
+                      href="#workshops" 
+                      onClick={(e) => {
+                        e.preventDefault(); // Prevent default link behavior
+                        handleScrollToSection('workshops');
+                      }}
+                    >
+                      Workshops
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="#seminars" 
+                      onClick={(e) => {
+                        e.preventDefault(); // Prevent default link behavior
+                        handleScrollToSection('seminars');
+                      }}
+                    >
+                      Seminars/Webinars
+                    </a>
+                  </li>
                 </ul>
               )}
             </li>
