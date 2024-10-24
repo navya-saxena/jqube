@@ -1,0 +1,150 @@
+/* EventsPage.css */
+
+.events-page {
+    padding: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .events-title {
+    font-size: 2rem;
+    color: #003366; /* Dark blue color */
+    margin-bottom: 20px;
+  }
+  
+  .event-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .event-card img {
+    width: 100px; /* Adjust the image size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .event-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-card button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-card button:hover {
+    background-color: #00509e;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  /* Seminar/Webinar Section Styles */
+.seminar-webinar-section {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.seminar-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.seminar-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(33.33% - 20px);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.seminar-card img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.seminar-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.seminar-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.seminar-card button {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seminar-card button:hover {
+  background-color: #00509e;
+}
+
+.seminar-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .seminar-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .seminar-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .seminar-card {
+    width: 100%;
+  }
+}
+
+  
+ 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset some global styles */
 html, body, #root {
   margin: 0;
@@ -37,3 +38,29 @@ html, body, #root {
   margin: 0 auto;
 }
 
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+>>>>>>> ce55ceac60d91a275109bc14a7585a4afb98c314
